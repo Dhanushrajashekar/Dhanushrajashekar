@@ -1,19 +1,3 @@
-github profile markdown generator logo
-GitHub Profile README Generator
-Star this repo
-20695
-Fork on GitHub
-6357
-
-back to edit
-
-copy-markdown
-
-download markdown
-
-download backup
-
-preview
 <h1 align="center">Hi 👋, I'm Dhanush Rajashekar</h1>
 <h3 align="center">I am a skilled D365 Technical Developer specializing in D365 integration, Power BI, MySQL, and LCS. With a degree in Computer Science from Global Academy of Technology, I possess a strong foundation in technology and programming. I have successfully implemented seamless system integrations and generated valuable insights using Power BI. I am excited to connect with professionals who share the same drive for innovation. Let's explore collaboration opportunities together.</h3>
 
