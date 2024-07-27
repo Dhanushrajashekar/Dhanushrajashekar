@@ -6,8 +6,6 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=dhanushrajashekar&label=Profile%20views&color=0e75b6&style=flat" alt="dhanushrajashekar" /> </p>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=dhanushrajashekar" alt="dhanushrajashekar" /></a> </p>
-
 - 🔭 I’m currently working on **Java**
 
 - 🌱 I’m currently learning **https://java-programming.mooc.fi/**
