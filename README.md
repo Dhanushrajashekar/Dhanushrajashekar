@@ -19,7 +19,7 @@
 
 - 📫 How to reach me **dhanushrajashekar13@gmail.com**
 
-- 📄 Know about my experiences [Hey there! I'm a tech enthusiast and developer with 2 years of IT experience, specializing in Dynamics 365 F&O, D365 Integration, Microsoft Certified - Power BI, MS SQL, and LCS.](Hey there! I'm a tech enthusiast and developer with 2 years of IT experience, specializing in Dynamics 365 F&O, D365 Integration, Microsoft Certified - Power BI, MS SQL, and LCS.)
+- 📄 Know about my experiences Hey there! I'm a tech enthusiast and developer with 2 years of IT experience, specializing in Dynamics 365 F&O, D365 Integration, Microsoft Certified - Power BI, MS SQL, and LCS.
 
 - ⚡ Fun fact **When I'm not coding, I'm probably dreaming up new app ideas or trying to teach my dog how to debug!**
 
