@@ -1,8 +1,8 @@
-name: Generate snake animation
+name: Generate Snake Animation
 
 on:
-  schedule:
-    - cron: "0 */12 * * *"  # Runs every 12 hours
+  schedule: # Run every 12 hours
+    - cron: "0 */12 * * *"
   workflow_dispatch:
   push:
     branches:
@@ -15,21 +15,30 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Configure Git
+      - name: Generate Snake Animation
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: dist/snake.svg
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Git
         run: |
           git config --global user.name "Dhanush Rajashekar"
           git config --global user.email "dhanushrajashekar1315@gmail.com"
 
-      - name: Generate Snake
-        uses: Platane/snk@v2
-        id: generate_snake
-        with:
-          github_user_name: ${{ github.repository_owner }}
-
-      - name: Push Changes
-        uses: JamesIves/github-pages-deploy-action@4.1.4
-        with:
-          branch: output  # The branch to deploy to
-          folder: dist    # The folder to deploy
+      - name: Commit and Push
+        run: |
+          git add dist/snake.svg
+          git commit -m "Generate snake animation"
+          git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Push to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: output
