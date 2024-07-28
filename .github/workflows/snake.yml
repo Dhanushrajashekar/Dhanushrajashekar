@@ -22,9 +22,10 @@ jobs:
 
       - name: Generate Snake
         uses: Platane/snk@v2
+        id: generate_snake
         with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           github_user_name: ${{ github.repository_owner }}
-          outputs: dist/snake.svg
 
       - name: Push Changes
         uses: JamesIves/github-pages-deploy-action@4.1.4
