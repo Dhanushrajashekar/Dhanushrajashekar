@@ -2,7 +2,7 @@ name: Generate snake animation
 
 on:
   schedule:
-    - cron: "* */12 * * *"
+    - cron: "0 */12 * * *"  # Runs every 12 hours
   workflow_dispatch:
   push:
     branches:
@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Configure Git
         run: |
@@ -23,14 +23,13 @@ jobs:
       - name: Generate Snake
         uses: Platane/snk@v2
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          output: dist/snake.svg
-          grid: dist/grid.json
+          github_user_name: ${{ github.repository_owner }}
+          outputs: dist/snake.svg
 
       - name: Push Changes
-        uses: ad-m/github-push-action@v0.6.0
+        uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: output
-          force: true
-          directory: dist
+          branch: output  # The branch to deploy to
+          folder: dist    # The folder to deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
