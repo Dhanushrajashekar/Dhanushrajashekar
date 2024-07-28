@@ -36,7 +36,7 @@
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=dhanushrajashekar&show_icons=true&locale=en" alt="dhanushrajashekar" /></p>
 
-![GitHub Snake Animation](https://github.com/Dhanushrajashekar/snake-animation-workflow/blob/output/dist/snake.svg)
+![GitHub Snake Animation](https://github.com/Dhanushrajashekar/Dhanushrajashekar/blob/output/snake.svg)
 
 
 
