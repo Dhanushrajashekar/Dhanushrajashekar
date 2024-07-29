@@ -23,7 +23,7 @@ jobs:
           outputs: dist/snake.svg
 
       - name: Push generated animation to GitHub
-        uses: crazy-max/ghaction-github-pages@v3.3.0
+        uses: crazy-max/ghaction-github-pages@v3.1.1
         with:
           target_branch: output
           build_dir: dist
